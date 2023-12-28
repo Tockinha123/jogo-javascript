@@ -15,7 +15,7 @@ function getPlayerChoice (){
 function singleRound (computerSelection, playerSelection){
     if ((computerSelection.localeCompare(playerSelection, "en",{sensitivity: "accent"})) === 0) {
         console.log("It's a tie! Re-playing the round...");
-        return singleRound(getComputerChoice(), getPlayerChoice());
+        return singleRound(getComputerChoiche(), getPlayerChoice());
     }
     else if (((computerSelection.localeCompare("Rock","en",{sensitivity:"accent"}) === 0) && (playerSelection.localeCompare("Scissors","en",{sensitivity:"accent"}) === 0))){
         return console.log("You Lose! Rock beats Scissors");
